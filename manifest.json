@@ -1,8 +1,8 @@
 {
-    "name": "Chrome Extension Starter Kit",
+    "name": "Ksad",
     "version": "1.0",
     "manifest_version": 2,
-    "description": "Chrome Extension starter Kit with es6 standards",
+    "description": "Progress Bar - This is your life.",
     "browser_action": {
         "default_icon": "images/icon.png",
         "default_popup": "popup.html"
@@ -17,9 +17,5 @@
         "http://*/*",
         "https://*/*"
     ],
-    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-    "background": {
-        "page": "background.html",
-        "persistent": false
-    }
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }

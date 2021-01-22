@@ -2,11 +2,80 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <style>
+        body {
+            display: none;
+            margin: 0;
+            border: 1px solid #000;
+            padding: 10px 12px;
+        }
+
+        body.is-loaded {
+            display: block;
+        }
+
+        .times-list .time {
+            margin-bottom: 10px;
+        }
+
+        .time {}
+
+        .time__progress-bar {
+            background: #000;
+            height: 22px;
+            width: 100%;
+        }
+
+        .time__progress {
+            background: #02ff01;
+            width: 30%;
+            height: 100%;
+        }
+
+        .time__text {
+            font-size: 14px;
+            margin-bottom: 3px;
+            font-weight: bold;
+        }
+    </style>
+    <script src="./js/moment.min.js"></script>
 </head>
 
-<body style="width:700px;">
-    <div id='message'>Loading....</div>
+<body style="width:300px;">
+    <div class="times-list">
+        <div class="time time--day">
+            <div class="time__text" id="day-text-progress">
+                Day: 60% complete.
+            </div>
+            <div class="time__progress-bar">
+                <div id="day-time-progress" class="time__progress" style="width: 60%;"></div>
+            </div>
+        </div>
+
+        <div class="time time--month">
+            <div class="time__text" id="month-text-progress">
+                Month: 80% complete.
+            </div>
+            <div class="time__progress-bar">
+                <div id="month-time-progress" class="time__progress" style="width: 80%;"></div>
+            </div>
+        </div>
+
+        <div class="time time--year">
+            <div class="time__text" id="year-text-progress">
+                Year: 5% complete.
+            </div>
+            <div class="time__progress-bar">
+                <div id="year-time-progress" class="time__progress" style="width: 5%;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/popup.js"></script>
 </body>
 
 </html>
