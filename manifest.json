@@ -3,7 +3,7 @@
     "manifest_version": 3,
     "name": "Time Progress",
     "short_name": "Time Progress",
-    "description": "Time Progress - This is your life.",
+    "description": "Time progress bar by day, month and year.",
     "action": {
         "default_icon": "images/icon.png",
         "default_popup": "popup.html"
