@@ -1,21 +1,11 @@
 {
-    "name": "Ksad",
     "version": "1.0",
-    "manifest_version": 2,
-    "description": "Progress Bar - This is your life.",
-    "browser_action": {
+    "manifest_version": 3,
+    "name": "Time Progress",
+    "short_name": "Time Progress",
+    "description": "Time Progress - This is your life.",
+    "action": {
         "default_icon": "images/icon.png",
         "default_popup": "popup.html"
-    },
-    "permissions": [
-        "cookies",
-        "tabs",
-        "activeTab",
-        "declarativeContent",
-        "<all_urls>",
-        "storage",
-        "http://*/*",
-        "https://*/*"
-    ],
-    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+    }
 }
